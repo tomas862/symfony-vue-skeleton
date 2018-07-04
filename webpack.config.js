@@ -12,14 +12,12 @@ Encore
     resolveUrlLoader: true,
   })
   .enableVueLoader()
-  .enableTypeScriptLoader()
-  .enableForkedTypeScriptTypesChecking()
 
-  .addEntry('js/app', './assets/js/app.ts')
+  .addEntry('js/app', './assets/js/app.js')
   .addStyleEntry('css/app', './assets/css/app.scss')
 
   .addLoader({
-    test: /\.(js|jsx|ts)$/,
+    test: /\.(js|jsx)$/,
     loader: 'eslint-loader',
     exclude: [/node_modules/],
     enforce: 'pre',

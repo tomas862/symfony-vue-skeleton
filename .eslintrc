@@ -1,6 +1,7 @@
 {
   "extends": "airbnb",
-  "parser": "typescript-eslint-parser",
+  "parser": "babel-eslint",
+  "plugins": ["vue"],
   "rules": {
     "linebreak-style": "off"
   },

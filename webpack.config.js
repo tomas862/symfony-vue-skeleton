@@ -11,12 +11,15 @@ Encore
   .enableSassLoader(() => {}, {
     resolveUrlLoader: true,
   })
+  .enableVueLoader()
+  .enableTypeScriptLoader()
+  .enableForkedTypeScriptTypesChecking()
 
-  .addEntry('js/app', './assets/js/app.js')
+  .addEntry('js/app', './assets/js/app.ts')
   .addStyleEntry('css/app', './assets/css/app.scss')
 
   .addLoader({
-    test: /\.(js|jsx)$/,
+    test: /\.(js|jsx|ts)$/,
     loader: 'eslint-loader',
     exclude: [/node_modules/],
     enforce: 'pre',

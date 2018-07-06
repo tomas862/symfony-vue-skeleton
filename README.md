@@ -14,7 +14,7 @@ clone repository
 
 1. Run composer install
 2. Run one of the commands provided in package.json for assets management
-3. Launch web-server.
+3. Launch web-server or configure public/index.php to be reachable for web-servers.
 4. Enjoy!
 
 ### Notes
@@ -22,7 +22,8 @@ clone repository
 - eslint airbnb is being used for assets validation. Check if your editor can scan 
  .editorconfig file
 - for each commit, pre-commit hook file validates PSR-1 and PSR-2 php standards - if its not working check if it has right permissions.
-  after composer install command it will be copied in .git/hooks folder.  
+  after composer install command it will be copied in .git/hooks folder.
+- consider using vue/cli for creating components and other parts of vue.js ecosystem.
 
 
 ## License
